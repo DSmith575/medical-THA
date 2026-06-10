@@ -3,6 +3,7 @@ import type { Category, UseCategoriesReturn } from '../interfaces/interfaces'
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:3001'
 
+// Custom hook to fetch categories from the backend API and manage loading/error state
 export const useCategories = (): UseCategoriesReturn => {
     const [categories, setCategories] = useState<Category[]>([])
     const [loading, setLoading] = useState(true)
