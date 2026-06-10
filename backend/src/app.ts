@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import testRouter from './api/routes/test.routes.js';
+import medicalCategories from './api/routes/categories.routes.js';
 
 dotenv.config();
 
@@ -12,7 +12,7 @@ const API_BASE_PATH = '/api';
 const app = express();
 app.use(cors());
 
-app.use(API_BASE_PATH, testRouter);
+app.use(API_BASE_PATH, medicalCategories);
 
 
 

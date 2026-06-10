@@ -2,12 +2,12 @@ import { prisma } from '../../lib/prisma';
 import { Request, Response } from 'express';
 
 
-export const testController = async (req: Request, res: Response) => {
+export const getCategories = async (req: Request, res: Response) => {
     try {
         const categories = await prisma.category.findMany({
-                include: {
-                    procedures: true,
-                        }
+            include: {
+                procedures: true,
+            }
         });
         res.json(categories);
     } catch (error) {
