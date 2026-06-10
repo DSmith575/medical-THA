@@ -1,50 +1,32 @@
 import { useEffect, useState } from 'react'
-
-type Procedure = {
-  id: number
-  name: string
-  doseMsv: number
-  backgroundEquivalent: string
-}
-
-type Category = {
-  id: number
-  name: string
-  procedures: Procedure[]
-}
-
-type UseCategoriesReturn = {
-  categories: Category[]
-  loading: boolean
-  error: string | null
-}
+import type { Category, UseCategoriesReturn } from '../interfaces/interfaces'
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:3001'
 
 export const useCategories = (): UseCategoriesReturn => {
-  const [categories, setCategories] = useState<Category[]>([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
+    const [categories, setCategories] = useState<Category[]>([])
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState<string | null>(null)
 
-  useEffect(() => {
-    const fetchCategories = async () => {
-      try {
-        const response = await fetch(`${API_BASE_URL}/api/categories`)
-        if (!response.ok) throw new Error(`HTTP ${response.status}`)
-        const data: Category[] = await response.json()
-        setCategories(data)
-      } catch (err) {
-        setError(
-          `Unable to load dataset. Please make sure the backend is running at ${API_BASE_URL}.`
-        )
-        console.error(err)
-      } finally {
-        setLoading(false)
-      }
-    }
+    useEffect(() => {
+        const fetchCategories = async () => {
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/categories`)
+                if (!response.ok) throw new Error(`HTTP ${response.status}`)
+                const data: Category[] = await response.json()
+                setCategories(data)
+            } catch (err) {
+                setError(
+                    `Unable to load dataset. Please make sure the backend is running at ${API_BASE_URL}.`
+                )
+                console.error(err)
+            } finally {
+                setLoading(false)
+            }
+        }
 
-    fetchCategories()
-  }, [])
+        fetchCategories()
+    }, [])
 
-  return { categories, loading, error }
+    return { categories, loading, error }
 }
