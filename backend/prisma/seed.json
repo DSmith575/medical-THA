@@ -1,0 +1,179 @@
+{
+  "data": [
+    {
+      "name": "Abdominal Region",
+      "procedures": [
+        {
+          "name": "CT Abdomen and Pelvis",
+          "doseMsv": 7.7,
+          "backgroundEquivalent": "2.6 years"
+        },
+        {
+          "name": "CT Abdomen and Pelvis with and without contrast",
+          "doseMsv": 15.4,
+          "backgroundEquivalent": "5.1 years"
+        },
+        {
+          "name": "CT Colonography",
+          "doseMsv": 6,
+          "backgroundEquivalent": "2 years"
+        },
+        {
+          "name": "IVU",
+          "doseMsv": 3,
+          "backgroundEquivalent": "1 year"
+        },
+        {
+          "name": "Barium Enema",
+          "doseMsv": 6,
+          "backgroundEquivalent": "2 years"
+        },
+        {
+          "name": "Upper GI Study with Barium",
+          "doseMsv": 6,
+          "backgroundEquivalent": "2 years"
+        }
+      ]
+    },
+    {
+      "name": "Bone",
+      "procedures": [
+        {
+          "name": "Lumbar Spine",
+          "doseMsv": 1.4,
+          "backgroundEquivalent": "6 months"
+        },
+        {
+          "name": "Extremity X-ray",
+          "doseMsv": 0.001,
+          "backgroundEquivalent": "<3 hours"
+        }
+      ]
+    },
+    {
+      "name": "Central Nervous System",
+      "procedures": [
+        {
+          "name": "CT Brain",
+          "doseMsv": 1.6,
+          "backgroundEquivalent": "7 months"
+        },
+        {
+          "name": "CT Brain with and without contrast",
+          "doseMsv": 3.2,
+          "backgroundEquivalent": "13 months"
+        },
+        {
+          "name": "CT Head and Neck",
+          "doseMsv": 1.2,
+          "backgroundEquivalent": "5 months"
+        },
+        {
+          "name": "CT Spine",
+          "doseMsv": 8.8,
+          "backgroundEquivalent": "3 years"
+        }
+      ]
+    },
+    {
+      "name": "Chest",
+      "procedures": [
+        {
+          "name": "CT Chest",
+          "doseMsv": 6.1,
+          "backgroundEquivalent": "2 years"
+        },
+        {
+          "name": "CT Lung Cancer Screening",
+          "doseMsv": 1.5,
+          "backgroundEquivalent": "6 months"
+        },
+        {
+          "name": "Chest X-ray",
+          "doseMsv": 0.1,
+          "backgroundEquivalent": "10 days"
+        }
+      ]
+    },
+    {
+      "name": "Dental",
+      "procedures": [
+        {
+          "name": "Dental X-ray",
+          "doseMsv": 0.005,
+          "backgroundEquivalent": "1 day"
+        },
+        {
+          "name": "Panoramic X-ray",
+          "doseMsv": 0.025,
+          "backgroundEquivalent": "3 days"
+        },
+        {
+          "name": "Cone Beam CT",
+          "doseMsv": 0.18,
+          "backgroundEquivalent": "22 days"
+        }
+      ]
+    },
+    {
+      "name": "Heart",
+      "procedures": [
+        {
+          "name": "Coronary CTA",
+          "doseMsv": 8.7,
+          "backgroundEquivalent": "3 years"
+        },
+        {
+          "name": "Cardiac CT Calcium Scoring",
+          "doseMsv": 1.7,
+          "backgroundEquivalent": "6 months"
+        },
+        {
+          "name": "Non Cardiac CTA",
+          "doseMsv": 5.1,
+          "backgroundEquivalent": "<2 years"
+        }
+      ]
+    },
+    {
+      "name": "Men's Imaging",
+      "procedures": [
+        {
+          "name": "DEXA",
+          "doseMsv": 0.001,
+          "backgroundEquivalent": "3 hours"
+        }
+      ]
+    },
+    {
+      "name": "Nuclear Medicine",
+      "procedures": [
+        {
+          "name": "PET/CT Whole Body",
+          "doseMsv": 22.7,
+          "backgroundEquivalent": "7.6 years"
+        }
+      ]
+    },
+    {
+      "name": "Women's Imaging",
+      "procedures": [
+        {
+          "name": "DEXA",
+          "doseMsv": 0.001,
+          "backgroundEquivalent": "3 hours"
+        },
+        {
+          "name": "Screening Digital Mammography",
+          "doseMsv": 0.28,
+          "backgroundEquivalent": "34 days"
+        },
+        {
+          "name": "3D Mammogram",
+          "doseMsv": 0.34,
+          "backgroundEquivalent": "42 days"
+        }
+      ]
+    }
+  ]
+}

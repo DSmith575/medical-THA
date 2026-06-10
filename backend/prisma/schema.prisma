@@ -11,3 +11,23 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+model Category {
+  id         Int         @id @default(autoincrement())
+  name       String      @unique
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+  procedures Procedure[]
+}
+
+model Procedure {
+  id                   Int      @id @default(autoincrement())
+  name                 String
+  doseMsv              Float
+  backgroundEquivalent String
+
+  categoryId Int
+  category   Category @relation(fields: [categoryId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
